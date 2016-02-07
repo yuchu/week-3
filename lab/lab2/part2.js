@@ -18,3 +18,17 @@ _.each(myArray, function(value, key, list) {
   console.log(value, key, list);
 });
 ===================== */
+
+var newArray = [1, 2, 3, 4, 5, 4, 4];
+
+var countItem = function(array, number) {
+  var count = 0;
+  _.each(array, function(value){
+    if(value === number){
+      count += 1;
+    }
+  });
+  console.log(count);
+};
+
+countItem(newArray, 4);
