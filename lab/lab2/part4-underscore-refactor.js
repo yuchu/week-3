@@ -116,7 +116,7 @@
                         isSchool &&
                         meetsMinimumEnrollment &&
                         !meetsZipCondition);
-    if (filter_condition){return true;}
+    return filter_condition;
   });
 
   var filtered_data = schoolSplit[0];
